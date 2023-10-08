@@ -21,10 +21,11 @@ namespace array_library
             {
                 int length = collection.Length;
                 int index = 0;
-                Random rnd = new Random();
+                Random rnd = new Random();  //вместо 28 строки
                 while (index < length) 
                 {
                     collection[index] = rnd.Next(1, 10);
+                    //collection[index] = new Random().Next(1, 20); //не срабатывает
                     index++;
                     
                 }
